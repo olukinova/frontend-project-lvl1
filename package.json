@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "type": "module",
+  "description": "hexlet-project-lvl1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olukinova/frontend-project-lvl1.git"
+  },
+  "author": "Olena Lukinova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olukinova/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/olukinova/frontend-project-lvl1#readme"
+}
