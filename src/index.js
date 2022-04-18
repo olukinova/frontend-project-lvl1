@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 let userName = '';
 const numberOfRounds = 3;
 
-export const greeting = () => {
+const greeting = () => {
 	console.log('Welcome to the Brain Games!');
 	userName = readlineSync.question('May I have your name? ');
 	console.log(`Hello, ${userName}!\n`);
@@ -36,7 +36,7 @@ export const playGame = (gameDescription, gameData) => {
 	greeting()
 	console.log(gameDescription)
 	for (let i = 0; i < numberOfRounds; i += 1) {
-		//gameGata is a FUNCTION which returns array with 2 elements each time it is called
+		//gameData is a FUNCTION which returns array with 2 elements each time it is called
 		//1st element is generated question
 		//2nd element is calculated 'expected' answer
 		//so we are calling our gameData() function to get new values
@@ -50,7 +50,7 @@ export const playGame = (gameDescription, gameData) => {
 		let result = checkResult(expectedAnswer);
 		// if result is false exit loop
 		if (!result)
-		   break;
+		break;
 	}
 	if (count === 3) {
 		console.log('Congratulations!');
