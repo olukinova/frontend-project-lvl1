@@ -13,12 +13,11 @@ export const getUserAnswer = () => {
         return String(readlineSync.question('Your answer: '));
 }
 
+let count = 0;
 export const checkResult = (correctAnswer) => {
 	//correctAnswer
 	//userAnswer
-	let count = 0;
 	const userAnswer = getUserAnswer()
-
 	if (userAnswer === correctAnswer) {
 		console.log('Correct!');
 		count += 1;
@@ -28,9 +27,6 @@ export const checkResult = (correctAnswer) => {
 		console.log(`Let's try again, ${userName}!`);
 		return false;
 	}
-	if (count === 3) {
-		console.log(`Congratulations, ${userName}!`);
-		};
 };
 
 export const playGame = (gameDescription, gameData) => {
@@ -55,5 +51,8 @@ export const playGame = (gameDescription, gameData) => {
 		// if result is false exit loop
 		if (!result)
 		   break;
+	}
+	if (count === 3) {
+		console.log('Congratulations!');
 	}
 };
