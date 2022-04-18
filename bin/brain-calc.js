@@ -35,7 +35,6 @@ const getGameData = () => {
 
 }
 
-
 generalFunctions.playGame(gameDescription, getGameData);
 
 

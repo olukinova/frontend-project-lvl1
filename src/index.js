@@ -10,23 +10,27 @@ export const greeting = () => {
 };
 
 export const getUserAnswer = () => {
-        return readlineSync.question('Your answer: ');
+        return String(readlineSync.question('Your answer: '));
 }
 
 export const checkResult = (correctAnswer) => {
 	//correctAnswer
 	//userAnswer
+	let count = 0;
 	const userAnswer = getUserAnswer()
 
 	if (userAnswer === correctAnswer) {
 		console.log('Correct!');
-		console.log(`Congratulations, ${userName}!`);
+		count += 1;
 		return true;
 	} else {
 		console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
 		console.log(`Let's try again, ${userName}!`);
 		return false;
 	}
+	if (count === 3) {
+		console.log(`Congratulations, ${userName}!`);
+		};
 };
 
 export const playGame = (gameDescription, gameData) => {
