@@ -45,6 +45,7 @@ export const playGame = (gameDescription, gameData) => {
 // if result is false exit loop
     if (!result) {
       break;
+	};
   }
   if (count === 3) {
     console.log(`'Congratulations, ${userName}!'`);
