@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
-import * as generalFunctions from "../src/index.js";
+import * as generalFunctions from  '../src/index.js';
 
-const getRandomNumber = (min, max) => {
-	return Math.round(Math.random() * (max - min) + min);
-};
+const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
 const gameDescription = "Find the greatest common divisor of given numbers";
 

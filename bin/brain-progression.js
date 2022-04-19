@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import * as generalFunctions from "../src/index.js";
+import * as generalFunctions from '../src/index.js';
 
 const gameDescription = "What number is missing in the progression?";
-
 
 const getGameData = () => {
   let progBeginNumber = Math.round(Math.random() * (100 - 1) + 1);
