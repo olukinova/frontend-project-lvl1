@@ -9,7 +9,8 @@ const gameDescription = 'Find the greatest common divisor of given numbers';
 const calculateResult = (randomNum1, randomNum2) => {
 
   if ((typeof randomNum1 !== 'number') || (typeof randomNum2 !== 'number')) {
-    return false;
+    return false; 
+  }
   randomNum1 = Math.abs(randomNum1);
   randomNum2 = Math.abs(randomNum2);
   while (randomNum2) {
@@ -19,6 +20,7 @@ const calculateResult = (randomNum1, randomNum2) => {
   }
   return randomNum1;
 };
+
 
 console.log(calculateResult(10, 4));
 
@@ -32,6 +34,5 @@ const getGameData = () => {
 	return [question, correctAnswer()]
 
 };
-
 
 generalFunctions.playGame(gameDescription, getGameData);
