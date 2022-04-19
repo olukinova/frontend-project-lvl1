@@ -27,7 +27,6 @@ const getGameData = () => {
   const randomNum2 = getRandomNumber(0, 100);
   const question = (`${randomNum1} ${randomNum2}`);
   const correctAnswer = () => String(calculateResult(randomNum1, randomNum2));
-  //using array here because we don't know this
   return [question, correctAnswer()];
 };
 

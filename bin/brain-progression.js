@@ -12,7 +12,7 @@ const getGameData = () => {
   const buildProgression = (progBeginNumber, progStepNumber, progLengthNumber) => {
     const result = [];
     for (let i = 0; i < progLengthNumber; i += 1) {
-		  result.push(progBeginNumber + progStepNumber * i);
+      result.push(progBeginNumber + progStepNumber * i);
     }
     return result;
   };
@@ -22,7 +22,6 @@ const getGameData = () => {
   progression[hiddenItemIndex] = '..';
   const progToString = progression.join(' ');
   const question = `Question: ${progToString}`;
-  //using array here because we don't know this
   return [question, correctAnswer];
 };
 
