@@ -21,7 +21,7 @@ const calculateResult = (num1, num2, operator) => {
 };
 
 const getGameData = () => {
-  const randomOperator = operand[getRandomNumber(0, operand.length - 1)]; 
+  const randomOperator = operand[getRandomNumber(0, operand.length - 1)];
   const randomNum1 = getRandomNumber(0, 100);
   const randomNum2 = getRandomNumber(0, 100);
   const question = `${randomNum1} ${randomOperator} ${randomNum2}`;
