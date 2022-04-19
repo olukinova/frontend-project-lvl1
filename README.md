@@ -8,3 +8,13 @@ https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 
 brain-gcd:
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
+
+brain-prime.js
+https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
+
+brain-progression
+frontend-project-lvl1
+
+brain-even
+https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
+
