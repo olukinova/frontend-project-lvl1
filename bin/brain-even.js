@@ -26,7 +26,7 @@ const startGame = () => {
   for (let i = 0; i < numberOfRounds; i += 1) {
     const result = startRound();
     if (result === false) {
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
