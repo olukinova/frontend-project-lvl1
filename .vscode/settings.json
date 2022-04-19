@@ -1,4 +1,5 @@
 {
     "debug.node.autoAttach": "on",
-    "eslint.enable": true
+    "eslint.enable": true,
+    "eslint.options": { "overrideConfigFile": "eslintrc.yml" }
 }

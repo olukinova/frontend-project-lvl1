@@ -9,10 +9,10 @@ const getGameData = () => {
   const progLengthNumber = 10;
   const hiddenItemIndex = Math.round(Math.random() * (progLengthNumber - 1));
 
-  const buildProgression = (progBeginNumber, progStepNumber, progLengthNumber) => {
+  const buildProgression = (beginNumber, stepNumber, lengthNumber) => {
     const result = [];
-    for (let i = 0; i < progLengthNumber; i += 1) {
-      result.push(progBeginNumber + progStepNumber * i);
+    for (let i = 0; i < lengthNumber; i += 1) {
+      result.push(beginNumber + stepNumber * i);
     }
     return result;
   };

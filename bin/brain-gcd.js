@@ -10,14 +10,14 @@ const calculateResult = (randomNum1, randomNum2) => {
   if ((typeof randomNum1 !== 'number') || (typeof randomNum2 !== 'number')) {
     return false;
   }
-  randomNum1 = Math.abs(randomNum1);
-  randomNum2 = Math.abs(randomNum2);
-  while (randomNum2) {
-    const temp = randomNum2;
-    randomNum2 = randomNum1 % randomNum2;
-    randomNum1 = temp;
+  let num1 = Math.abs(randomNum1);
+  let num2 = Math.abs(randomNum2);
+  while (num2) {
+    const temp = num2;
+    num2 = num1 % num2;
+    num1 = temp;
   }
-  return randomNum1;
+  return num1;
 };
 
 console.log(calculateResult(10, 4));
@@ -27,6 +27,7 @@ const getGameData = () => {
   const randomNum2 = getRandomNumber(0, 100);
   const question = (`${randomNum1} ${randomNum2}`);
   const correctAnswer = () => String(calculateResult(randomNum1, randomNum2));
+
   return [question, correctAnswer()];
 };
 

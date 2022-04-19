@@ -6,6 +6,10 @@ plugins:
 env:
   node: true
 
+settings:
+  jest:
+    version: 27
+
 extends:
   - 'airbnb-base'
   - 'plugin:jest/recommended'

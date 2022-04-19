@@ -15,7 +15,7 @@ The following games are included:
 
 4. Brain-prime: is a given number prime?
 
-5. Brain-progression: you have to answer what nimber is missing in a given progression.
+5. Brain-progression: you have to answer what number is missing in a given progression.
 
 Follow the links below to see games demonstration:
 
@@ -27,7 +27,6 @@ https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 
 brain-prime.js
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
-
 
 brain-progression
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
