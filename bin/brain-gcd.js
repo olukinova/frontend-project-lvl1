@@ -20,8 +20,6 @@ const calculateResult = (randomNum1, randomNum2) => {
   return num1;
 };
 
-console.log(calculateResult(10, 4));
-
 const getGameData = () => {
   const randomNum1 = getRandomNumber(0, 100);
   const randomNum2 = getRandomNumber(0, 100);
