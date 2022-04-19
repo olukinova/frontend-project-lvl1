@@ -53,6 +53,6 @@ export const playGame = (gameDescription, gameData) => {
 		break;
 	}
 	if (count === 3) {
-		console.log('Congratulations!');
+		console.log(`'Congratulations, ${userName}!'`);
 	}
 };
