@@ -9,10 +9,10 @@ const greeting = () => {
   console.log(`Hello, ${userName}!\n`);
 };
 
-export const getUserAnswer = () => String(readlineSync.question('Your answer: '));
+const getUserAnswer = () => String(readlineSync.question('Your answer: '));
 
 let count = 0;
-export const checkResult = (correctAnswer) => {
+const checkResult = (correctAnswer) => {
   const userAnswer = getUserAnswer();
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
@@ -24,7 +24,7 @@ export const checkResult = (correctAnswer) => {
   return false;
 };
 
-export const playGame = (gameDescription, gameData) => {
+export default (gameDescription, gameData) => {
   greeting();
   console.log(gameDescription);
   for (let i = 0; i < numberOfRounds; i += 1) {

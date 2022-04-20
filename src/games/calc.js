@@ -1,11 +1,8 @@
-#!/usr/bin/env node
-import * as generalFunctions from '../src/index.js';
+import playGame from '../index.js';
 
 const operand = ['+', '-', '*'];
 
 const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
-
-const gameDescription = 'What is the result of the expression?';
 
 const calculateResult = (num1, num2, operator) => {
   switch (operator) {
@@ -20,6 +17,8 @@ const calculateResult = (num1, num2, operator) => {
   }
 };
 
+const gameDescription = 'What is the result of the expression?';
+
 const getGameData = () => {
   const randomOperator = operand[getRandomNumber(0, operand.length - 1)];
   const randomNum1 = getRandomNumber(0, 100);
@@ -29,4 +28,4 @@ const getGameData = () => {
   return [question, correctAnswer()];
 };
 
-generalFunctions.playGame(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);

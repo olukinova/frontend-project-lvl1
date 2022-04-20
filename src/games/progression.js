@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-import * as generalFunctions from '../src/index.js';
+import playGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -25,4 +24,4 @@ const getGameData = () => {
   return [question, correctAnswer];
 };
 
-generalFunctions.playGame(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);

@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-
-import * as generalFunctions from '../src/index.js';
+import playGame from '../index.js';
 
 const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
@@ -29,4 +27,4 @@ const getGameData = () => {
   return [question, correctAnswer()];
 };
 
-generalFunctions.playGame(gameDescription, getGameData);
+export default () => playGame(gameDescription, getGameData);
