@@ -25,15 +25,33 @@ https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 brain-gcd:
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 
-brain-prime.js
+brain-prime:
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 
-brain-progression
+brain-progression:
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 
-brain-even
+brain-even:
 https://asciinema.org/connect/a1babf74-13f2-425a-b0f3-e32fc4cb6f9a
 
-Setup: 
-
-$ sudo npm install -g 
+Setup:  
+1. 
+```
+git clone https://github.com/olukinova/frontend-project-lvl1.git
+```
+2. 
+```
+cd frontend-project-lvl1
+```
+3.
+```
+npm install
+```
+4. Make game files executable
+```
+chmod + x ./bin/*.js
+```
+4. run selected game
+```
+npm exec brain-calc
+```

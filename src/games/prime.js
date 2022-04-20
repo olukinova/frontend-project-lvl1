@@ -1,4 +1,4 @@
-import playGame from '../src/index.js';
+import playGame from '../index.js';
 
 const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
