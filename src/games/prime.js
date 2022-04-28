@@ -1,6 +1,5 @@
 import playGame from '../index.js';
-
-const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
+import getRandomNumber from './Math.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
