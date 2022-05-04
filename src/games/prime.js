@@ -4,14 +4,12 @@ import getRandomNumber from './Math.js';
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const checkNumber = (num) => {
-  let flag = 'yes';
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      flag = 'no';
-      break;
+      return 'no';
     }
   }
-  return flag;
+  return 'yes';
 };
 
 const getGameData = () => {
