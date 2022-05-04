@@ -12,7 +12,7 @@ export default (gameDescription, gameData) => {
     const calculatedGameData = gameData();
     const question = calculatedGameData[0];
     const expectedAnswer = calculatedGameData[1];
-    console.log(`Question: ${question}`);
+    console.log(`${question}`);
     const userAnswer = getUserAnswer();
     if (userAnswer === expectedAnswer) {
       console.log('Correct!');
