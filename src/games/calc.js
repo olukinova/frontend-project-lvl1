@@ -22,7 +22,7 @@ const getGameData = () => {
   const randomOperator = operand[getRandomNumber(0, operand.length - 1)];
   const randomNum1 = getRandomNumber(0, 10);
   const randomNum2 = getRandomNumber(0, 10);
-  const question = `${randomNum1} ${randomOperator} ${randomNum2}`;
+  const question = `Question: ${randomNum1} ${randomOperator} ${randomNum2}`;
   const correctAnswer = () => String(calculateResult(randomNum1, randomNum2, randomOperator));
   return [question, correctAnswer()];
 };

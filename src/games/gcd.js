@@ -20,7 +20,7 @@ const calculateResult = (randomNum1, randomNum2) => {
 const getGameData = () => {
   const randomNum1 = getRandomNumber(1, 10);
   const randomNum2 = getRandomNumber(1, 10);
-  const question = (`${randomNum1} ${randomNum2}`);
+  const question = (`Question: ${randomNum1} ${randomNum2}`);
   const correctAnswer = () => String(calculateResult(randomNum1, randomNum2));
 
   return [question, correctAnswer()];
