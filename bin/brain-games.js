@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import userName from '../src/cli.js';
+import welcomeMessages from '../src/cli.js';
 
-console.log(`Hello, ${userName}!`);
+welcomeMessages();
