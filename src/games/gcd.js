@@ -1,12 +1,9 @@
 import playGame from '../index.js';
-import getRandomNumber from './Math.js';
+import getRandomNumber from '../../helpers/Math.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers';
 
 const calculateResult = (randomNum1, randomNum2) => {
-  if ((typeof randomNum1 !== 'number') || (typeof randomNum2 !== 'number')) {
-    return false;
-  }
   let num1 = Math.abs(randomNum1);
   let num2 = Math.abs(randomNum2);
   while (num2) {

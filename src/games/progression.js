@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import getRandomNumber from './Math.js';
+import getRandomNumber from '../../helpers/Math.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
